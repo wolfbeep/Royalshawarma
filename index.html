@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Shawarma - Authentic Middle Eastern Cuisine</title>
+    <meta name="description" content="Experience authentic Middle Eastern cuisine at Royal Shawarma. Fresh shawarma, kebabs, and traditional dishes crafted with love and tradition.">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Royal Shawarma - Authentic Middle Eastern Cuisine">
+    <meta property="og:description" content="Experience authentic Middle Eastern cuisine at Royal Shawarma. Fresh shawarma, kebabs, and traditional dishes crafted with love and tradition.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-text">ROYAL SHAWARMA</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#menu" class="nav-link">OUR MENU</a></li>
+                <li><a href="#locations" class="nav-link">LOCATIONS</a></li>
+                <li><a href="#order" class="nav-link order-button">ORDER NOW</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Royal Shawarma</h1>
+                <p class="hero-subtitle">Authentic Middle Eastern cuisine crafted with love and tradition</p>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-1.jpg" alt="Delicious Shawarma" class="hero-img active" id="heroImg1">
+                <img src="images/hero-2.jpg" alt="Fresh Ingredients" class="hero-img" id="heroImg2">
+                <img src="images/hero-3.jpg" alt="Traditional Cooking" class="hero-img" id="heroImg3">
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Discover our authentic Middle Eastern specialties</p>
+                
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Menu items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section id="locations" class="locations-section">
+            <div class="container">
+                <h2 class="section-title">Our Locations</h2>
+                <p class="section-subtitle">Visit us at one of our convenient locations</p>
+                
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <h3 class="location-name">Oakville</h3>
+                        <p class="location-address">1540 North Service Rd W</p>
+                        <p class="location-city">Oakville, ON L6M 4A1</p>
+                        <p class="location-phone">905 469 8366 ext. 1</p>
+                        <a href="https://maps.google.com/?q=1540+North+Service+Rd+W,+Oakville,+ON+L6M+4A1" 
+                           target="_blank" class="location-button">View on Map</a>
+                    </div>
+                    
+                    <div class="location-card">
+                        <h3 class="location-name">Mississauga</h3>
+                        <p class="location-address">3615 Dixie Rd</p>
+                        <p class="location-city">Mississauga, ON L4Y 4H4</p>
+                        <p class="location-phone">905 469 8366 ext. 2</p>
+                        <a href="https://maps.google.com/?q=3615+Dixie+Rd,+Mississauga,+ON+L4Y+4H4" 
+                           target="_blank" class="location-button">View on Map</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Section -->
+        <section id="order" class="order-section">
+            <div class="container">
+                <h2 class="section-title">Order Online</h2>
+                <p class="section-subtitle">Get your favorite Royal Shawarma delivered to your door</p>
+                
+                <div class="delivery-buttons">
+                    <div class="delivery-arrow left-arrow">
+                        <span class="arrow">←</span>
+                    </div>
+                    
+                    <a href="https://www.ubereats.com" target="_blank" class="delivery-btn uber-btn">
+                        <span class="delivery-text">Order on Uber Eats</span>
+                    </a>
+                    
+                    <a href="https://www.skipthedishes.com" target="_blank" class="delivery-btn skip-btn">
+                        <span class="delivery-text">Order on Skip The Dishes</span>
+                    </a>
+                    
+                    <div class="delivery-arrow right-arrow">
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <p>Or call us directly at <a href="tel:+19054698366" class="phone-link">905 469 8366</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">ROYAL SHAWARMA</span>
+                </div>
+                
+                <p class="footer-description">Authentic Middle Eastern cuisine crafted with love and tradition</p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">TikTok</a>
+                </div>
+                
+                <p class="footer-copyright">&copy; 2024 Royal Shawarma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
