@@ -5,19 +5,19 @@ import { MapPin, Navigation } from "lucide-react";
 const locations = [
   {
     id: 1,
-    name: "Erin Mills",
-    address: "6039 Erin Mills Pkwy",
-    city: "Mississauga, ON L5N 0G5",
-    phone: "(905) 567-8901",
-    mapUrl: "https://maps.google.com/?q=6039+Erin+Mills+Pkwy,+Mississauga,+ON+L5N+0G5"
+    name: "Oakville",
+    address: "1540 North Service Rd W",
+    city: "Oakville, ON L6M 4A1",
+    phone: "(905) 469-8366",
+    mapUrl: "https://maps.google.com/?q=1540+North+Service+Rd+W,+Oakville,+ON+L6M+4A1"
   },
   {
     id: 2,
-    name: "Brampton",
-    address: "2740 N Park Dr #30",
-    city: "Brampton, ON L6S 6E2", 
-    phone: "(905) 789-1234",
-    mapUrl: "https://maps.google.com/?q=2740+N+Park+Dr+30,+Brampton,+ON+L6S+6E2"
+    name: "Mississauga",
+    address: "3615 Dixie Rd",
+    city: "Mississauga, ON L4Y 4H4", 
+    phone: "(905) 469-8366",
+    mapUrl: "https://maps.google.com/?q=3615+Dixie+Rd,+Mississauga,+ON+L4Y+4H4"
   }
 ];
 
