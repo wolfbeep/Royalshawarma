@@ -354,9 +354,7 @@ export default function Home() {
       <footer className="px-4 py-12 lg:px-8 border-t border-white/20">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <Utensils className="text-white text-xl" />
             <span className="logo-text text-white text-xl">ROYAL SHAWARMA</span>
-            <Clover className="text-white text-lg" />
           </div>
           
           <p className="text-white/80 mb-6">Authentic Middle Eastern cuisine crafted with love and tradition</p>
