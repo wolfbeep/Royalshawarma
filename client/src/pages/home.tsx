@@ -199,7 +199,7 @@ export default function Home() {
           >
             <Button 
               size="lg"
-              className="delivery-btn flex items-center space-x-4 hover:bg-green-700 text-white px-8 py-4 rounded-full shadow-xl font-semibold bg-[#ff8100]"
+              className="delivery-btn flex items-center space-x-4 hover:bg-orange-600 text-white px-8 py-4 rounded-full shadow-xl font-semibold bg-[#ff8100]"
               onClick={() => window.open('https://www.skipthedishes.com', '_blank')}
               data-testid="button-skip-the-dishes"
             >
