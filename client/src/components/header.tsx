@@ -30,10 +30,10 @@ export default function Header() {
         <div className="flex items-center space-x-3">
           <div className="flex items-center">
             <Utensils className="text-white text-2xl mr-2" />
-            <span className="logo-text text-white text-2xl lg:text-3xl">SHAWARMA</span>
+            <span className="logo-text text-white text-2xl lg:text-3xl">ROYAL</span>
           </div>
           <div className="flex items-center">
-            <span className="logo-text text-white text-2xl lg:text-3xl">ROYAL</span>
+            <span className="logo-text text-white text-2xl lg:text-3xl">SHAWARMA</span>
             <Clover className="text-white text-xl ml-2" />
           </div>
         </div>

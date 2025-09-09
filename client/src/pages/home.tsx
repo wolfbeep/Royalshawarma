@@ -187,7 +187,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            Choose your preferred delivery platform and enjoy Shawarma Royal at home
+            Choose your preferred delivery platform and enjoy Royal Shawarma at home
           </motion.p>
           
           <motion.div 
@@ -246,7 +246,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <Utensils className="text-white text-xl" />
-            <span className="logo-text text-white text-xl">SHAWARMA ROYAL</span>
+            <span className="logo-text text-white text-xl">ROYAL SHAWARMA</span>
             <Clover className="text-white text-lg" />
           </div>
           
@@ -283,7 +283,7 @@ export default function Home() {
             </a>
           </div>
           
-          <p className="text-white/60 text-sm">© 2024 Shawarma Royal. All rights reserved.</p>
+          <p className="text-white/60 text-sm">© 2024 Royal Shawarma. All rights reserved.</p>
         </div>
       </footer>
     </div>
