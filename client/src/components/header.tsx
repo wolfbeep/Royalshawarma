@@ -10,10 +10,16 @@ export default function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const scrollToMenu = () => {
-    const menuSection = document.getElementById('menu');
-    if (menuSection) {
-      menuSection.scrollIntoView({ behavior: 'smooth' });
+  const goToMenu = () => {
+    // If we're already on home page, scroll to menu
+    if (window.location.pathname === '/') {
+      const menuSection = document.getElementById('menu');
+      if (menuSection) {
+        menuSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If we're on another page, navigate to home page with menu anchor
+      window.location.href = '/#menu';
     }
     setIsMobileMenuOpen(false);
   };
@@ -41,7 +47,7 @@ export default function Header() {
             HOME
           </a>
           <button 
-            onClick={scrollToMenu}
+            onClick={goToMenu}
             className="nav-item text-white font-medium hover:text-orange-200 transition-colors"
             data-testid="nav-menu"
           >
@@ -99,7 +105,7 @@ export default function Header() {
               HOME
             </a>
             <button 
-              onClick={scrollToMenu}
+              onClick={goToMenu}
               className="block text-white font-medium hover:text-orange-200 transition-colors py-2 w-full text-left"
               data-testid="mobile-nav-menu"
             >
