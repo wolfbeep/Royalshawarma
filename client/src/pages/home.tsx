@@ -18,45 +18,73 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     id: "1",
-    name: "Chicken Shawarma Wrap",
-    description: "Tender marinated chicken with fresh vegetables, pickles, and our signature garlic sauce wrapped in warm pita bread.",
-    price: "$12.99",
-    image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-  },
-  {
-    id: "2", 
-    name: "Beef Shawarma Plate",
-    description: "Slow-cooked beef shawarma served with rice, grilled vegetables, hummus, and tahini sauce.",
-    price: "$15.99",
+    name: "Chicken Shawarma Plate",
+    description: "Tender marinated chicken shawarma served on a plate with rice, fresh vegetables, and our signature sauces.",
+    price: "$16.99",
     image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
   },
   {
+    id: "2", 
+    name: "Large Chicken Shawarma Pita",
+    description: "Generous serving of tender chicken shawarma with fresh vegetables, pickles, and garlic sauce in warm pita bread.",
+    price: "$13.99",
+    image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+  },
+  {
     id: "3",
-    name: "Mixed Shawarma Combo", 
-    description: "A combination of chicken and lamb shawarma with Mediterranean salad, hummus, and pita bread.",
-    price: "$18.99",
+    name: "Chicken Shawarma with Greek Salad", 
+    description: "Savory chicken shawarma paired with fresh Greek salad featuring tomatoes, cucumbers, olives, and feta cheese.",
+    price: "$17.99",
     image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
   },
   {
     id: "4",
-    name: "Falafel Wrap",
-    description: "Crispy homemade falafel with fresh vegetables, lettuce, tomatoes, and creamy tahini sauce.",
-    price: "$10.99", 
-    image: "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    name: "French Fries",
+    description: "Golden crispy French fries, perfectly seasoned and served hot as the perfect side to any meal.",
+    price: "$5.99", 
+    image: "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
   },
   {
     id: "5",
-    name: "Traditional Hummus",
-    description: "Creamy homemade hummus topped with olive oil, paprika, and served with warm pita bread.",
+    name: "Greek Salad",
+    description: "Fresh mixed greens with tomatoes, cucumbers, red onions, olives, and feta cheese drizzled with olive oil.",
+    price: "$11.99",
+    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+  },
+  {
+    id: "6",
+    name: "Chicken Souvlaki Half Rice Half Salad",
+    description: "Grilled chicken souvlaki served with a combination of seasoned rice and fresh Mediterranean salad.",
+    price: "$15.99",
+    image: "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+  },
+  {
+    id: "7",
+    name: "Hummus",
+    description: "Creamy traditional hummus made from chickpeas, tahini, and olive oil, served with warm pita bread.",
     price: "$8.99",
     image: "https://images.unsplash.com/photo-1541832676-9b763b564c9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
   },
   {
-    id: "6",
-    name: "Homemade Baklava",
-    description: "Layers of crispy phyllo pastry filled with chopped nuts and sweetened with honey syrup.",
-    price: "$6.99",
+    id: "8",
+    name: "Baba Ganoush",
+    description: "Smoky roasted eggplant dip blended with tahini, garlic, and lemon juice, served with fresh pita bread.",
+    price: "$9.99",
     image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+  },
+  {
+    id: "9",
+    name: "Large Beef Pita",
+    description: "Generous portion of seasoned beef shawarma with fresh vegetables and our special sauce in warm pita bread.",
+    price: "$14.99",
+    image: "https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+  },
+  {
+    id: "10",
+    name: "Large Falafel Pita",
+    description: "Crispy homemade falafel with fresh vegetables, lettuce, tomatoes, and creamy tahini sauce in pita bread.",
+    price: "$12.99",
+    image: "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
   }
 ];
 
