@@ -91,7 +91,7 @@ export default function Home() {
       setCurrentImageIndex((prevIndex) => 
         prevIndex === menuItems.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -159,12 +159,12 @@ export default function Home() {
                 opacity: { duration: 0.5 },
                 scale: { duration: 0.5 },
                 y: { 
-                  duration: 2, 
+                  duration: 3, 
                   repeat: Infinity, 
                   ease: "easeInOut" 
                 },
                 boxShadow: { 
-                  duration: 2, 
+                  duration: 3, 
                   repeat: Infinity, 
                   ease: "easeInOut" 
                 }
