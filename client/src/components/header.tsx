@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Utensils, Clover, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,14 +28,7 @@ export default function Header() {
       >
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <div className="flex items-center">
-            <Utensils className="text-white text-2xl mr-2" />
-            <span className="logo-text text-white text-2xl lg:text-3xl">ROYAL</span>
-          </div>
-          <div className="flex items-center">
-            <span className="logo-text text-white text-2xl lg:text-3xl">SHAWARMA</span>
-            <Clover className="text-white text-xl ml-2" />
-          </div>
+          <span className="logo-text text-white text-2xl lg:text-3xl">ROYAL SHAWARMA</span>
         </div>
 
         {/* Desktop Navigation Links */}
