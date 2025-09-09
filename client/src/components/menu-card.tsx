@@ -15,11 +15,6 @@ interface MenuCardProps {
 }
 
 export default function MenuCard({ item }: MenuCardProps) {
-  const handleAddToCart = () => {
-    // TODO: Implement add to cart functionality
-    console.log(`Added ${item.name} to cart`);
-  };
-
   return (
     <motion.div
       whileHover={{ y: -8, scale: 1.02 }}
@@ -50,21 +45,13 @@ export default function MenuCard({ item }: MenuCardProps) {
             {item.description}
           </p>
           
-          <div className="flex justify-between items-center">
+          <div className="text-center">
             <span 
               className="text-2xl font-bold text-red-600"
               data-testid={`text-menu-price-${item.id}`}
             >
               {item.price}
             </span>
-            
-            <Button 
-              className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors shadow-md"
-              onClick={handleAddToCart}
-              data-testid={`button-add-to-cart-${item.id}`}
-            >
-              Add to Cart
-            </Button>
           </div>
         </CardContent>
       </Card>
