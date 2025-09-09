@@ -4,7 +4,7 @@ import { SiUber } from "react-icons/si";
 
 export default function DeliveryButtons() {
   const openSkipTheDishes = () => {
-    window.open('https://www.skipthedishes.com', '_blank');
+    window.open('https://www.skipthedishes.com/royal-shawarma-dixie-road?utm_source=google&utm_medium=cpc&utm_campaign=CM_S_G_CAN_EN_[RES]_[ENGM]_SC_Mississauga_1002350&utm_campaignid=15365077874&adj_tracker=o6dvmeq&adj_campaign=15365077874&gad_source=1&gad_campaignid=15365077874&gbraid=0AAAAAD3ULIVD6iLxgtaQGv2pqfa_mlSFa&gclid=CjwKCAjw_fnFBhB0EiwAH_MfZk6EGLp4QdJrfzHd1EIWVoFsVsXMuKqSNbJnVNa2RSqo5Rma3ISfIRoCl0MQAvD_BwE', '_blank');
   };
 
   const openUberEats = () => {
@@ -20,7 +20,7 @@ export default function DeliveryButtons() {
       >
         <Button
           onClick={openSkipTheDishes}
-          className="delivery-btn w-20 h-20 bg-green-600 hover:bg-green-700 rounded-full flex items-center justify-center shadow-xl p-0"
+          className="delivery-btn w-20 h-20 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center shadow-xl p-0"
           data-testid="button-skip-circle"
         >
           <span className="text-white text-2xl">🏍️</span>
