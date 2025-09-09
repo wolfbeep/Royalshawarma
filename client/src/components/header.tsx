@@ -48,7 +48,7 @@ export default function Header() {
             OUR MENU
           </button>
           <a 
-            href="#" 
+            href="/locations" 
             className="nav-item text-white font-medium hover:text-orange-200 transition-colors"
             data-testid="nav-locations"
           >
@@ -106,7 +106,7 @@ export default function Header() {
               OUR MENU
             </button>
             <a 
-              href="#" 
+              href="/locations" 
               className="block text-white font-medium hover:text-orange-200 transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
               data-testid="mobile-nav-locations"
