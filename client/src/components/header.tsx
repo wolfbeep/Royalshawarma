@@ -24,6 +24,20 @@ export default function Header() {
     setIsMobileMenuOpen(false);
   };
 
+  const goToOrder = () => {
+    // If we're already on home page, scroll to order section
+    if (window.location.pathname === '/') {
+      const orderSection = document.getElementById('order');
+      if (orderSection) {
+        orderSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If we're on another page, navigate to home page with order anchor
+      window.location.href = '/#order';
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="relative z-50 px-4 py-6 lg:px-8">
       <motion.nav 
@@ -69,6 +83,14 @@ export default function Header() {
           </a>
         </div>
 
+        {/* Order Button */}
+        <Button 
+          className="hidden md:block bg-white text-red-600 px-6 py-3 rounded-full font-semibold hover:bg-orange-50 transition-colors shadow-lg"
+          onClick={goToOrder}
+          data-testid="button-order-now"
+        >
+          ORDER NOW
+        </Button>
 
         {/* Mobile Menu Button */}
         <button 
@@ -120,6 +142,13 @@ export default function Header() {
             >
               OFFERS
             </a>
+            <Button 
+              className="w-full bg-white text-red-600 px-6 py-3 rounded-full font-semibold hover:bg-orange-50 transition-colors shadow-lg mt-4"
+              onClick={goToOrder}
+              data-testid="mobile-button-order-now"
+            >
+              ORDER NOW
+            </Button>
           </div>
         </motion.div>
       )}

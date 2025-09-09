@@ -265,7 +265,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="px-4 py-16 lg:px-8">
+      <section id="order" className="px-4 py-16 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h3 
             className="text-3xl lg:text-4xl font-bold text-white mb-6"
