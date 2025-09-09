@@ -69,13 +69,6 @@ export default function Header() {
           </a>
         </div>
 
-        {/* Order Button */}
-        <Button 
-          className="hidden md:block bg-white text-red-600 px-6 py-3 rounded-full font-semibold hover:bg-orange-50 transition-colors shadow-lg"
-          data-testid="button-order-now"
-        >
-          ORDER NOW
-        </Button>
 
         {/* Mobile Menu Button */}
         <button 
@@ -127,13 +120,6 @@ export default function Header() {
             >
               OFFERS
             </a>
-            <Button 
-              className="w-full bg-white text-red-600 px-6 py-3 rounded-full font-semibold hover:bg-orange-50 transition-colors shadow-lg mt-4"
-              onClick={() => setIsMobileMenuOpen(false)}
-              data-testid="mobile-button-order-now"
-            >
-              ORDER NOW
-            </Button>
           </div>
         </motion.div>
       )}

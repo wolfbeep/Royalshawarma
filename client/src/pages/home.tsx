@@ -4,7 +4,7 @@ import Header from "@/components/header";
 import MenuCard from "@/components/menu-card";
 import DeliveryButtons from "@/components/delivery-buttons";
 import { Button } from "@/components/ui/button";
-import { Utensils, Clover, Phone, Facebook, Instagram, Twitter } from "lucide-react";
+import { Utensils, Clover, Phone, Facebook, Instagram, Twitter, ChevronLeft, ChevronRight } from "lucide-react";
 import { SiUber, SiTiktok } from "react-icons/si";
 
 interface MenuItem {
@@ -288,7 +288,7 @@ export default function Home() {
           </motion.p>
           
           <motion.div 
-            className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8"
+            className="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-12"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -296,18 +296,31 @@ export default function Home() {
           >
             <Button 
               size="lg"
-              className="delivery-btn flex items-center space-x-4 hover:bg-orange-600 text-white px-8 py-4 rounded-full shadow-xl font-semibold bg-[#ff8100]"
+              className="delivery-btn flex items-center space-x-4 hover:bg-orange-600 hover:scale-110 text-white px-12 py-6 text-lg rounded-full shadow-xl font-semibold bg-[#ff8100] transition-all duration-300"
               onClick={() => window.open('https://www.skipthedishes.com/royal-shawarma-dixie-road?utm_source=google&utm_medium=cpc&utm_campaign=CM_S_G_CAN_EN_[RES]_[ENGM]_SC_Mississauga_1002350&utm_campaignid=15365077874&adj_tracker=o6dvmeq&adj_campaign=15365077874&gad_source=1&gad_campaignid=15365077874&gbraid=0AAAAAD3ULIVD6iLxgtaQGv2pqfa_mlSFa&gclid=CjwKCAjw_fnFBhB0EiwAH_MfZk6EGLp4QdJrfzHd1EIWVoFsVsXMuKqSNbJnVNa2RSqo5Rma3ISfIRoCl0MQAvD_BwE', '_blank')}
               data-testid="button-skip-the-dishes"
             >
               <span>Skip The Dishes</span>
             </Button>
             
-            <div className="text-white font-medium">OR</div>
+            <div className="flex items-center space-x-3 text-white">
+              <motion.div
+                whileHover={{ x: -5 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <ChevronLeft className="text-2xl" />
+              </motion.div>
+              <motion.div
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <ChevronRight className="text-2xl" />
+              </motion.div>
+            </div>
             
             <Button 
               size="lg"
-              className="delivery-btn flex items-center space-x-4 bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-full shadow-xl font-semibold"
+              className="delivery-btn flex items-center space-x-4 bg-black hover:bg-gray-800 hover:scale-110 text-white px-12 py-6 text-lg rounded-full shadow-xl font-semibold transition-all duration-300"
               onClick={() => window.open('https://www.ubereats.com/ca/store/royal-shawarma/Ce4mOG06SuWs8qVPXa2v7w?srsltid=AfmBOooi3-7E31UWAzzKk5t2ge13aoRu6LvrEvEkmzsgOPq00vIOZQyC', '_blank')}
               data-testid="button-uber-eats"
             >
