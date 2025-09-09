@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Header from "@/components/header";
 import MenuCard from "@/components/menu-card";
 import DeliveryButtons from "@/components/delivery-buttons";
@@ -139,51 +139,65 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="relative"
           >
-            <motion.img 
-              key={currentImageIndex}
-              src={menuItems[currentImageIndex].image} 
-              alt={menuItems[currentImageIndex].name}
-              className="rounded-full w-72 h-72 lg:w-96 lg:h-96 mx-auto object-cover shadow-2xl border-8 border-white/20"
-              initial={{ opacity: 0, y: 20, scale: 0.9 }}
-              animate={{ 
-                opacity: 1, 
-                y: [-5, 0, -5], 
-                scale: 1,
-                boxShadow: [
-                  "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-                  "0 35px 60px -12px rgba(0, 0, 0, 0.35)",
-                  "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
-                ]
-              }}
-              transition={{ 
-                opacity: { duration: 0.5 },
-                scale: { duration: 0.5 },
-                y: { 
-                  duration: 3, 
-                  repeat: Infinity, 
-                  ease: "easeInOut" 
-                },
-                boxShadow: { 
-                  duration: 3, 
-                  repeat: Infinity, 
-                  ease: "easeInOut" 
-                }
-              }}
-              exit={{ opacity: 0, y: -20, scale: 0.9 }}
-            />
+            <AnimatePresence mode="wait">
+              <motion.img 
+                key={currentImageIndex}
+                src={menuItems[currentImageIndex].image} 
+                alt={menuItems[currentImageIndex].name}
+                className="rounded-full w-72 h-72 lg:w-96 lg:h-96 mx-auto object-cover shadow-2xl border-8 border-white/20"
+                initial={{ opacity: 0, y: 20, scale: 0.9 }}
+                animate={{ 
+                  opacity: 1, 
+                  y: [-5, 0, -5], 
+                  scale: 1,
+                  boxShadow: [
+                    "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                    "0 35px 60px -12px rgba(0, 0, 0, 0.35)",
+                    "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+                  ]
+                }}
+                transition={{ 
+                  opacity: { duration: 1.5 },
+                  scale: { duration: 1.5 },
+                  y: { 
+                    duration: 3, 
+                    repeat: Infinity, 
+                    ease: "easeInOut" 
+                  },
+                  boxShadow: { 
+                    duration: 3, 
+                    repeat: Infinity, 
+                    ease: "easeInOut" 
+                  }
+                }}
+                exit={{ 
+                  opacity: 0, 
+                  y: -20, 
+                  scale: 0.9,
+                  transition: { duration: 1.5, ease: "easeInOut" }
+                }}
+              />
+            </AnimatePresence>
             
             {/* Menu item name overlay */}
-            <motion.div
-              key={`name-${currentImageIndex}`}
-              className="absolute -bottom-8 left-1/2 transform -translate-x-1/2"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <span className="bg-white/90 text-red-600 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                {menuItems[currentImageIndex].name}
-              </span>
-            </motion.div>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={`name-${currentImageIndex}`}
+                className="absolute -bottom-8 left-1/2 transform -translate-x-1/2"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.0, delay: 0.5 }}
+                exit={{ 
+                  opacity: 0, 
+                  y: -10,
+                  transition: { duration: 1.0, ease: "easeInOut" }
+                }}
+              >
+                <span className="bg-white/90 text-red-600 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  {menuItems[currentImageIndex].name}
+                </span>
+              </motion.div>
+            </AnimatePresence>
           </motion.div>
         </div>
       </section>
