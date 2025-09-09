@@ -91,7 +91,7 @@ export default function Home() {
       setCurrentImageIndex((prevIndex) => 
         prevIndex === menuItems.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
