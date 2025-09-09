@@ -33,7 +33,7 @@ export default function Header() {
             <span className="logo-text text-white text-2xl lg:text-3xl">SHAWARMA</span>
           </div>
           <div className="flex items-center">
-            <span className="logo-text text-white text-2xl lg:text-3xl">ROYALE</span>
+            <span className="logo-text text-white text-2xl lg:text-3xl">ROYAL</span>
             <Clover className="text-white text-xl ml-2" />
           </div>
         </div>
