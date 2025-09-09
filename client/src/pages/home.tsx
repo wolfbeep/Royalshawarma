@@ -339,11 +339,11 @@ export default function Home() {
             <p className="text-white/80">
               Or call us directly at{" "}
               <a 
-                href="tel:+1234567890" 
+                href="tel:+19054698366" 
                 className="text-yellow-300 hover:text-yellow-200 font-semibold transition-colors"
                 data-testid="link-phone"
               >
-                (123) 456-7890
+                905 469 8366
               </a>
             </p>
           </motion.div>

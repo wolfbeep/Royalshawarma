@@ -8,7 +8,7 @@ const locations = [
     name: "Oakville",
     address: "1540 North Service Rd W",
     city: "Oakville, ON L6M 4A1",
-    phone: "(905) 469-8366 ext. 1",
+    phone: "905 469 8366 ext. 1",
     mapUrl: "https://maps.google.com/?q=1540+North+Service+Rd+W,+Oakville,+ON+L6M+4A1"
   },
   {
@@ -16,7 +16,7 @@ const locations = [
     name: "Mississauga",
     address: "3615 Dixie Rd",
     city: "Mississauga, ON L4Y 4H4", 
-    phone: "(905) 469-8366 ext. 2",
+    phone: "905 469 8366 ext. 2",
     mapUrl: "https://maps.google.com/?q=3615+Dixie+Rd,+Mississauga,+ON+L4Y+4H4"
   }
 ];
