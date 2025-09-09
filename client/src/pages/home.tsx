@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Header from "@/components/header";
 import MenuCard from "@/components/menu-card";
@@ -82,6 +83,19 @@ const itemVariants = {
 };
 
 export default function Home() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Cycle through menu item images every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === menuItems.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen bg-royal-red bg-pattern">
       <Header />
@@ -123,12 +137,53 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+            className="relative"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600" 
-              alt="Royal Shawarma signature platter" 
-              className="rounded-full w-72 h-72 lg:w-96 lg:h-96 mx-auto object-cover shadow-2xl border-8 border-white/20 hover:scale-105 transition-transform duration-500" 
+            <motion.img 
+              key={currentImageIndex}
+              src={menuItems[currentImageIndex].image} 
+              alt={menuItems[currentImageIndex].name}
+              className="rounded-full w-72 h-72 lg:w-96 lg:h-96 mx-auto object-cover shadow-2xl border-8 border-white/20"
+              initial={{ opacity: 0, y: 20, scale: 0.9 }}
+              animate={{ 
+                opacity: 1, 
+                y: [-5, 0, -5], 
+                scale: 1,
+                boxShadow: [
+                  "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                  "0 35px 60px -12px rgba(0, 0, 0, 0.35)",
+                  "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+                ]
+              }}
+              transition={{ 
+                opacity: { duration: 0.5 },
+                scale: { duration: 0.5 },
+                y: { 
+                  duration: 2, 
+                  repeat: Infinity, 
+                  ease: "easeInOut" 
+                },
+                boxShadow: { 
+                  duration: 2, 
+                  repeat: Infinity, 
+                  ease: "easeInOut" 
+                }
+              }}
+              exit={{ opacity: 0, y: -20, scale: 0.9 }}
             />
+            
+            {/* Menu item name overlay */}
+            <motion.div
+              key={`name-${currentImageIndex}`}
+              className="absolute -bottom-8 left-1/2 transform -translate-x-1/2"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <span className="bg-white/90 text-red-600 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                {menuItems[currentImageIndex].name}
+              </span>
+            </motion.div>
           </motion.div>
         </div>
       </section>
