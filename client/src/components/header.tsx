@@ -74,13 +74,6 @@ export default function Header() {
           >
             LOCATIONS
           </a>
-          <a 
-            href="#" 
-            className="nav-item text-white font-medium hover:text-orange-200 transition-colors"
-            data-testid="nav-offers"
-          >
-            OFFERS
-          </a>
         </div>
 
         {/* Order Button */}
@@ -133,14 +126,6 @@ export default function Header() {
               data-testid="mobile-nav-locations"
             >
               LOCATIONS
-            </a>
-            <a 
-              href="#" 
-              className="block text-white font-medium hover:text-orange-200 transition-colors py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-              data-testid="mobile-nav-offers"
-            >
-              OFFERS
             </a>
             <Button 
               className="w-full bg-white text-red-600 px-6 py-3 rounded-full font-semibold hover:bg-orange-50 transition-colors shadow-lg mt-4"
