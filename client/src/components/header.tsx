@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="relative z-50 px-4 py-6 lg:px-8">
       <motion.nav 
-        className="flex items-center justify-between max-w-7xl mx-auto"
+        className="flex items-center justify-between max-w-7xl mx-auto text-[13px]"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -87,7 +87,6 @@ export default function Header() {
           {isMobileMenuOpen ? <X /> : <Menu />}
         </button>
       </motion.nav>
-
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <motion.div 
