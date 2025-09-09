@@ -27,14 +27,14 @@ export default function Header() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         {/* Logo */}
-        <div className="flex items-center space-x-3">
-          <span className="logo-text text-white text-2xl lg:text-3xl">ROYAL SHAWARMA</span>
-        </div>
+        <a href="/" className="flex items-center space-x-3" data-testid="logo-home">
+          <span className="logo-text text-white text-2xl lg:text-3xl hover:text-orange-200 transition-colors">ROYAL SHAWARMA</span>
+        </a>
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center space-x-8">
           <a 
-            href="#" 
+            href="/" 
             className="nav-item text-white font-medium hover:text-orange-200 transition-colors"
             data-testid="nav-home"
           >
@@ -91,7 +91,7 @@ export default function Header() {
         >
           <div className="px-4 py-6 space-y-4">
             <a 
-              href="#" 
+              href="/" 
               className="block text-white font-medium hover:text-orange-200 transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
               data-testid="mobile-nav-home"
