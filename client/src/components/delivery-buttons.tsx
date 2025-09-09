@@ -8,7 +8,7 @@ export default function DeliveryButtons() {
   };
 
   const openUberEats = () => {
-    window.open('https://www.ubereats.com', '_blank');
+    window.open('https://www.ubereats.com/ca/store/royal-shawarma/Ce4mOG06SuWs8qVPXa2v7w?srsltid=AfmBOooi3-7E31UWAzzKk5t2ge13aoRu6LvrEvEkmzsgOPq00vIOZQyC', '_blank');
   };
 
   return (
