@@ -4,24 +4,24 @@
 const menuItems = [
     {
         id: 1,
-        name: "Classic Chicken Shawarma",
-        description: "Tender marinated chicken wrapped in fresh pita with garlic sauce, pickles, and vegetables",
-        price: "$12.99",
-        image: "images/chicken-shawarma.jpg"
+        name: "Chicken Shawarma with Greek Salad",
+        description: "A fresh and flavorful fusion our tender, spiced chicken shawarma is paired with a vibrant Greek salad made with crisp lettuce, juicy tomatoes, cucumbers, onions, and creamy feta. Finished with our signature garlic and hot sauces, this dish offers the perfect balance of savory and refreshing in every bite",
+        price: "$14.99",
+        image: "images/chicken-shawarma-greek.jpg"
     },
     {
         id: 2,
-        name: "Lamb Shawarma Platter",
-        description: "Succulent lamb shawarma served with rice, salad, hummus, and tahini sauce",
-        price: "$16.99",
-        image: "images/lamb-shawarma.jpg"
+        name: "Chicken Shawarma with Rice",
+        description: "This classic shawarma dish is a local favorite, known for keeping customers coming back for more. Tender, perfectly seasoned chicken is served over a bed of fragrant rice, then topped with premium garlic sauce and a kick of hot sauce for the perfect finish.",
+        price: "$13.99",
+        image: "images/chicken-shawarma-rice.jpg"
     },
     {
         id: 3,
-        name: "Mixed Grill Plate",
-        description: "Combination of chicken and lamb kebabs with grilled vegetables and basmati rice",
-        price: "$18.99",
-        image: "images/mixed-grill.jpg"
+        name: "Chicken Shawarma with French Fries",
+        description: "A mouthwatering combo that never disappoints our perfectly seasoned chicken shawarma is served with a generous side of crispy, golden French fries. Juicy, tender chicken layered with bold spices meets fries fried to perfection, all topped with our signature garlic and hot sauces. A local favorite that delivers flavor in every bite",
+        price: "$12.99",
+        image: "images/chicken-shawarma-fries.jpg"
     },
     {
         id: 4,
