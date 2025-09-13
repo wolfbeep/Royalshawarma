@@ -34,7 +34,6 @@ export default function DeliveryButtons() {
           whileHover={{ scale: 1.15 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="mt-2"
         >
           <img
             src={uberEatsLogo}
