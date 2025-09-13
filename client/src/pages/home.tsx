@@ -18,73 +18,38 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     id: "1",
-    name: "Chicken Shawarma Plate",
-    description: "Tender marinated chicken shawarma served on a plate with rice, fresh vegetables, and our signature sauces.",
-    price: "$16.99",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-  },
-  {
-    id: "2", 
-    name: "Large Chicken Shawarma Pita",
-    description: "Generous serving of tender chicken shawarma with fresh vegetables, pickles, and garlic sauce in warm pita bread.",
-    price: "$13.99",
-    image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-  },
-  {
-    id: "3",
-    name: "Chicken Shawarma with Greek Salad", 
-    description: "Savory chicken shawarma paired with fresh Greek salad featuring tomatoes, cucumbers, olives, and feta cheese.",
-    price: "$17.99",
+    name: "Chicken Shawarma with Greek Salad",
+    description: "A fresh and flavorful fusion our tender, spiced chicken shawarma is paired with a vibrant Greek salad made with crisp lettuce, juicy tomatoes, cucumbers, onions, and creamy feta. Finished with our signature garlic and hot sauces, this dish offers the perfect balance of savory and refreshing in every bite.",
+    price: "$14.99",
     image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
   },
   {
-    id: "4",
-    name: "French Fries",
-    description: "Golden crispy French fries, perfectly seasoned and served hot as the perfect side to any meal.",
-    price: "$5.99", 
+    id: "2",
+    name: "Chicken Shawarma with Rice",
+    description: "This classic shawarma dish is a local favorite, known for keeping customers coming back for more. Tender, perfectly seasoned chicken is served over a bed of fragrant rice, then topped with premium garlic sauce and a kick of hot sauce for the perfect finish.",
+    price: "$13.99",
+    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+  },
+  {
+    id: "3",
+    name: "Chicken Shawarma with French Fries", 
+    description: "A mouthwatering combo that never disappoints our perfectly seasoned chicken shawarma is served with a generous side of crispy, golden French fries. Juicy, tender chicken layered with bold spices meets fries fried to perfection, all topped with our signature garlic and hot sauces. A local favorite that delivers flavor in every bite.",
+    price: "$12.99",
     image: "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
   },
   {
+    id: "4",
+    name: "Falafel Plate with Greek Salad and Rice",
+    description: "A wholesome and satisfying vegetarian favorite our falafel plate features crispy, golden chickpea patties served with fluffy rice and a refreshing Greek salad. Paired with creamy garlic sauce and optional hot sauce, this dish delivers bold flavor and fresh ingredients in every bite.",
+    price: "$13.99", 
+    image: "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+  },
+  {
     id: "5",
-    name: "Greek Salad",
-    description: "Fresh mixed greens with tomatoes, cucumbers, red onions, olives, and feta cheese drizzled with olive oil.",
+    name: "Chicken Shawarma Pita",
+    description: "Our Chicken Shawarma Pita is a handheld classic packed with flavor. Juicy, seasoned chicken is wrapped in warm pita bread and loaded with crisp lettuce, fresh tomatoes, onions, pickles, and tangy turnips. Finished with our signature garlic and hot sauces, it's the perfect grab-and-go meal that hits every craving.",
     price: "$11.99",
-    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-  },
-  {
-    id: "6",
-    name: "Chicken Souvlaki Half Rice Half Salad",
-    description: "Grilled chicken souvlaki served with a combination of seasoned rice and fresh Mediterranean salad.",
-    price: "$15.99",
-    image: "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-  },
-  {
-    id: "7",
-    name: "Hummus",
-    description: "Creamy traditional hummus made from chickpeas, tahini, and olive oil, served with warm pita bread.",
-    price: "$8.99",
-    image: "https://images.unsplash.com/photo-1541832676-9b763b564c9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-  },
-  {
-    id: "8",
-    name: "Baba Ganoush",
-    description: "Smoky roasted eggplant dip blended with tahini, garlic, and lemon juice, served with fresh pita bread.",
-    price: "$9.99",
-    image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-  },
-  {
-    id: "9",
-    name: "Large Beef Pita",
-    description: "Generous portion of seasoned beef shawarma with fresh vegetables and our special sauce in warm pita bread.",
-    price: "$14.99",
-    image: "https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-  },
-  {
-    id: "10",
-    name: "Large Falafel Pita",
-    description: "Crispy homemade falafel with fresh vegetables, lettuce, tomatoes, and creamy tahini sauce in pita bread.",
-    price: "$12.99",
-    image: "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
   }
 ];
 
