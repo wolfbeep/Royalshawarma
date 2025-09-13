@@ -27,8 +27,8 @@ const menuItems: MenuItem[] = [
     id: "2",
     name: "Chicken Shawarma with Rice",
     description: "This classic shawarma dish is a local favorite, known for keeping customers coming back for more. Tender, perfectly seasoned chicken is served over a bed of fragrant rice, then topped with premium garlic sauce and a kick of hot sauce for the perfect finish.",
-    price: "$13.99",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    price: "$15.99",
+    image: "@assets/Chicken_rice (1)_1757782866943.png"
   },
   {
     id: "3",
@@ -41,8 +41,8 @@ const menuItems: MenuItem[] = [
     id: "4",
     name: "Falafel Plate with Greek Salad and Rice",
     description: "A wholesome and satisfying vegetarian favorite our falafel plate features crispy, golden chickpea patties served with fluffy rice and a refreshing Greek salad. Paired with creamy garlic sauce and optional hot sauce, this dish delivers bold flavor and fresh ingredients in every bite.",
-    price: "$13.99", 
-    image: "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    price: "$15.99", 
+    image: "@assets/Falafa_greek_salad_1757782873813.png"
   },
   {
     id: "5",
@@ -50,6 +50,20 @@ const menuItems: MenuItem[] = [
     description: "Our Chicken Shawarma Pita is a handheld classic packed with flavor. Juicy, seasoned chicken is wrapped in warm pita bread and loaded with crisp lettuce, fresh tomatoes, onions, pickles, and tangy turnips. Finished with our signature garlic and hot sauces, it's the perfect grab-and-go meal that hits every craving.",
     price: "$11.99",
     image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+  },
+  {
+    id: "6",
+    name: "Hummus",
+    description: "Creamy traditional hummus made from chickpeas, tahini, and olive oil, drizzled with olive oil and served with warm pita bread. A perfect appetizer or side dish that brings authentic Middle Eastern flavors to your table.",
+    price: "$7.99",
+    image: "@assets/Hummus_1757782855056.png"
+  },
+  {
+    id: "7",
+    name: "Greek Salad",
+    description: "Fresh mixed greens with juicy tomatoes, crisp cucumbers, red onions, and creamy feta cheese, drizzled with olive oil and herbs. A refreshing and healthy choice that perfectly complements any main dish.",
+    price: "$9.49",
+    image: "@assets/Greek_Salad_1757782868245.png"
   }
 ];
 
@@ -82,12 +96,15 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => 
-        prevIndex === menuItems.length - 1 ? 0 : prevIndex + 1
+        prevIndex >= menuItems.length - 1 ? 0 : prevIndex + 1
       );
     }, 10000);
 
     return () => clearInterval(interval);
   }, []);
+
+  // Safety check to ensure currentImageIndex is valid
+  const safeImageIndex = currentImageIndex >= menuItems.length ? 0 : currentImageIndex;
 
   return (
     <div className="min-h-screen bg-royal-red bg-pattern">
@@ -135,8 +152,8 @@ export default function Home() {
             <AnimatePresence mode="wait">
               <motion.img 
                 key={currentImageIndex}
-                src={menuItems[currentImageIndex].image} 
-                alt={menuItems[currentImageIndex].name}
+                src={menuItems[safeImageIndex].image} 
+                alt={menuItems[safeImageIndex].name}
                 className="rounded-full w-72 h-72 lg:w-96 lg:h-96 mx-auto object-cover shadow-2xl border-8 border-white/20"
                 initial={{ opacity: 0, y: 20, scale: 0.9 }}
                 animate={{ 
@@ -187,7 +204,7 @@ export default function Home() {
                 }}
               >
                 <span className="bg-white/90 text-red-600 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                  {menuItems[currentImageIndex].name}
+                  {menuItems[safeImageIndex].name}
                 </span>
               </motion.div>
             </AnimatePresence>
