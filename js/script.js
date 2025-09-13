@@ -25,52 +25,17 @@ const menuItems = [
     },
     {
         id: 4,
-        name: "Falafel Wrap",
-        description: "Crispy falafel with fresh vegetables, hummus, and tahini in a warm pita bread",
-        price: "$10.99",
-        image: "images/falafel-wrap.jpg"
+        name: "Falafel Plate with Greek Salad and Rice",
+        description: "A wholesome and satisfying vegetarian favorite our falafel plate features crispy, golden chickpea patties served with fluffy rice and a refreshing Greek salad. Paired with creamy garlic sauce and optional hot sauce, this dish delivers bold flavor and fresh ingredients in every bite.",
+        price: "$13.99",
+        image: "images/falafel-plate-greek.jpg"
     },
     {
         id: 5,
-        name: "Beef Kebab",
-        description: "Grilled beef kebab skewers marinated in Middle Eastern spices, served with rice",
-        price: "$15.99",
-        image: "images/beef-kebab.jpg"
-    },
-    {
-        id: 6,
-        name: "Hummus with Pita",
-        description: "Creamy hummus topped with olive oil and paprika, served with warm pita bread",
-        price: "$8.99",
-        image: "images/hummus-pita.jpg"
-    },
-    {
-        id: 7,
-        name: "Tabbouleh Salad",
-        description: "Fresh parsley salad with tomatoes, onions, mint, lemon juice, and olive oil",
-        price: "$9.99",
-        image: "images/tabbouleh.jpg"
-    },
-    {
-        id: 8,
-        name: "Manakish Zaatar",
-        description: "Traditional Lebanese flatbread topped with zaatar spice blend and olive oil",
-        price: "$7.99",
-        image: "images/manakish.jpg"
-    },
-    {
-        id: 9,
-        name: "Baklava",
-        description: "Sweet pastry layers filled with nuts and honey syrup",
-        price: "$5.99",
-        image: "images/baklava.jpg"
-    },
-    {
-        id: 10,
-        name: "Arabic Coffee",
-        description: "Traditional Middle Eastern coffee served with dates",
-        price: "$3.99",
-        image: "images/arabic-coffee.jpg"
+        name: "Chicken Shawarma Pita",
+        description: "Our Chicken Shawarma Pita is a handheld classic packed with flavor. Juicy, seasoned chicken is wrapped in warm pita bread and loaded with crisp lettuce, fresh tomatoes, onions, pickles, and tangy turnips. Finished with our signature garlic and hot sauces, it's the perfect grab-and-go meal that hits every craving",
+        price: "$11.99",
+        image: "images/chicken-shawarma-pita.jpg"
     }
 ];
 
