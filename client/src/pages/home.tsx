@@ -28,7 +28,7 @@ const menuItems: MenuItem[] = [
     name: "Chicken Shawarma with Rice",
     description: "This classic shawarma dish is a local favorite, known for keeping customers coming back for more. Tender, perfectly seasoned chicken is served over a bed of fragrant rice, then topped with premium garlic sauce and a kick of hot sauce for the perfect finish.",
     price: "$15.99",
-    image: "@assets/Chicken_rice (1)_1757782866943.png"
+    image: "/chicken-rice.png"
   },
   {
     id: "3",
@@ -42,7 +42,7 @@ const menuItems: MenuItem[] = [
     name: "Falafel Plate with Greek Salad and Rice",
     description: "A wholesome and satisfying vegetarian favorite our falafel plate features crispy, golden chickpea patties served with fluffy rice and a refreshing Greek salad. Paired with creamy garlic sauce and optional hot sauce, this dish delivers bold flavor and fresh ingredients in every bite.",
     price: "$15.99", 
-    image: "@assets/Falafa_greek_salad_1757782873813.png"
+    image: "/falafel-greek-salad.png"
   },
   {
     id: "5",
@@ -56,14 +56,14 @@ const menuItems: MenuItem[] = [
     name: "Hummus",
     description: "Creamy traditional hummus made from chickpeas, tahini, and olive oil, drizzled with olive oil and served with warm pita bread. A perfect appetizer or side dish that brings authentic Middle Eastern flavors to your table.",
     price: "$7.99",
-    image: "@assets/Hummus_1757782855056.png"
+    image: "/hummus.png"
   },
   {
     id: "7",
     name: "Greek Salad",
     description: "Fresh mixed greens with juicy tomatoes, crisp cucumbers, red onions, and creamy feta cheese, drizzled with olive oil and herbs. A refreshing and healthy choice that perfectly complements any main dish.",
     price: "$9.49",
-    image: "@assets/Greek_Salad_1757782868245.png"
+    image: "/greek-salad.png"
   }
 ];
 
