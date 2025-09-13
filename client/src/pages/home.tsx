@@ -20,8 +20,8 @@ const menuItems: MenuItem[] = [
     id: "1",
     name: "Chicken Shawarma with Greek Salad",
     description: "A fresh and flavorful fusion our tender, spiced chicken shawarma is paired with a vibrant Greek salad made with crisp lettuce, juicy tomatoes, cucumbers, onions, and creamy feta. Finished with our signature garlic and hot sauces, this dish offers the perfect balance of savory and refreshing in every bite.",
-    price: "$14.99",
-    image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    price: "$18.99",
+    image: "/chicken-greek-salad.webp"
   },
   {
     id: "2",
@@ -34,8 +34,8 @@ const menuItems: MenuItem[] = [
     id: "3",
     name: "Chicken Shawarma with French Fries", 
     description: "A mouthwatering combo that never disappoints our perfectly seasoned chicken shawarma is served with a generous side of crispy, golden French fries. Juicy, tender chicken layered with bold spices meets fries fried to perfection, all topped with our signature garlic and hot sauces. A local favorite that delivers flavor in every bite.",
-    price: "$12.99",
-    image: "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    price: "$17.99",
+    image: "/chicken-french-fries.jpg"
   },
   {
     id: "4",
@@ -46,10 +46,10 @@ const menuItems: MenuItem[] = [
   },
   {
     id: "5",
-    name: "Chicken Shawarma Pita",
-    description: "Our Chicken Shawarma Pita is a handheld classic packed with flavor. Juicy, seasoned chicken is wrapped in warm pita bread and loaded with crisp lettuce, fresh tomatoes, onions, pickles, and tangy turnips. Finished with our signature garlic and hot sauces, it's the perfect grab-and-go meal that hits every craving.",
-    price: "$11.99",
-    image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    name: "Chicken Shawarma Wrap",
+    description: "Our Chicken Shawarma Wrap is a handheld classic packed with flavor. Juicy, seasoned chicken is wrapped in warm pita bread and loaded with crisp lettuce, fresh tomatoes, onions, pickles, and tangy turnips. Finished with our signature garlic and hot sauces, it's the perfect grab-and-go meal that hits every craving.",
+    price: "$12.99",
+    image: "/chicken-shawarma-wrap.jpg"
   },
   {
     id: "6",
