@@ -256,7 +256,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Order With
+            Order Now
           </motion.h3>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
