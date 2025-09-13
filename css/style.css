@@ -24,7 +24,7 @@ body::before {
     background-image: url('../images/shawarma-pattern.png');
     background-size: 200px 200px;
     background-repeat: repeat;
-    opacity: 0.2;
+    opacity: 0.9;
     mix-blend-mode: screen;
     pointer-events: none;
     z-index: 1;
