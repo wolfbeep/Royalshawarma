@@ -157,8 +157,12 @@
 
   body {
     @apply font-sans antialiased text-foreground;
-    background: #d40000 url("/shawarma-pattern.png") repeat center center;
-    background-size: 200px 200px;
+    background-color: #d40000;
+    background-image: url("/shawarma-pattern.png");
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 100px 100px;
+    background-attachment: fixed;
   }
 }
 
