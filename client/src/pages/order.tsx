@@ -89,7 +89,7 @@ export default function Order() {
                 <Button 
                   size="lg"
                   className="delivery-btn flex items-center justify-center space-x-4 bg-black hover:bg-gray-800 hover:scale-105 text-white px-8 py-4 text-base rounded-full shadow-xl font-semibold transition-all duration-300 w-full"
-                  onClick={() => window.open('https://www.ubereats.com/ca/store/royal-shawarma/Ce4mOG06SuWs8qVPXa2v7w?srsltid=AfmBOooi3-7E31UWAzzKk5t2ge13aoRu6LvrEvEkmzsgOPq00vIOZQyC', '_blank')}
+                  onClick={() => window.open('https://www.ubereats.com/ca/store/royal-shawarma-3615-dixie-rd/yqiKhlh7XP-uP7qBoXHLHw?diningMode=DELIVERY&sc=SEARCH_SUGGESTION', '_blank')}
                   data-testid="button-uber-mississauga"
                 >
                   <SiUber className="text-xl" />
