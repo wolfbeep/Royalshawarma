@@ -53,7 +53,7 @@ export default function Order() {
                 <Button 
                   size="lg"
                   className="delivery-btn flex items-center justify-center space-x-4 bg-black hover:bg-gray-800 hover:scale-105 text-white px-8 py-4 text-base rounded-full shadow-xl font-semibold transition-all duration-300 w-full"
-                  onClick={() => window.open('https://www.ubereats.com/ca/store/royal-shawarma-oakville', '_blank')}
+                  onClick={() => window.open('https://www.ubereats.com/ca/store/royal-shawarma/Ce4mOG06SuWs8qVPXa2v7w?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlNoYXdhcm1hJTIwUm95YWxlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyZmQyYTIzZWQtYTI1Yy0yYjE5LTRiYTktMTJkZmFiNTY3ZTZlJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0My43MDg1NyUyQyUyMmxvbmdpdHVkZSUyMiUzQS03OS4zOTA2MyU3RA%3D%3D', '_blank')}
                   data-testid="button-uber-oakville"
                 >
                   <SiUber className="text-xl" />
