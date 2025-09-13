@@ -26,7 +26,7 @@ export default function DeliveryButtons() {
             className="delivery-btn w-20 h-20 bg-[#ff8100] hover:bg-orange-600 rounded-full flex items-center justify-center shadow-xl p-0"
             data-testid="button-skip-circle"
           >
-            <span className="text-white text-xs font-bold">SKIP</span>
+            <span className="text-white text-lg font-bold">SKIP</span>
           </Button>
         </motion.div>
 
@@ -40,7 +40,7 @@ export default function DeliveryButtons() {
             className="delivery-btn w-20 h-20 bg-black hover:bg-gray-800 rounded-full flex items-center justify-center shadow-xl p-0"
             data-testid="button-uber-circle"
           >
-            <SiUber className="text-white text-2xl" />
+            <SiUber className="text-white text-lg" />
           </Button>
         </motion.div>
       </div>
