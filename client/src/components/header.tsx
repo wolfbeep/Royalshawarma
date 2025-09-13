@@ -25,16 +25,8 @@ export default function Header() {
   };
 
   const goToOrder = () => {
-    // If we're already on home page, scroll to order section
-    if (window.location.pathname === '/') {
-      const orderSection = document.getElementById('order');
-      if (orderSection) {
-        orderSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      // If we're on another page, navigate to home page with order anchor
-      window.location.href = '/#order';
-    }
+    // Navigate to the order page
+    window.location.href = '/order';
     setIsMobileMenuOpen(false);
   };
 
