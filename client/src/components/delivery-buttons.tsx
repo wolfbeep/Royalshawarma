@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { SiUber } from "react-icons/si";
+import skipLogo from "@assets/skip_1757787826712.png";
+import uberEatsLogo from "@assets/uber_eats_green_1757787827950.png";
 
 export default function DeliveryButtons() {
   const openSkipTheDishes = () => {
@@ -21,13 +21,13 @@ export default function DeliveryButtons() {
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
         >
-          <Button
+          <img
+            src={skipLogo}
+            alt="Skip The Dishes"
             onClick={openSkipTheDishes}
-            className="delivery-btn w-20 h-20 bg-[#ff8100] hover:bg-orange-600 rounded-full flex items-center justify-center shadow-xl p-0"
-            data-testid="button-skip-circle"
-          >
-            <span className="text-white text-lg font-bold">SKIP</span>
-          </Button>
+            className="w-20 h-20 cursor-pointer rounded-lg shadow-xl hover:shadow-2xl transition-shadow"
+            data-testid="button-skip-logo"
+          />
         </motion.div>
 
         <motion.div
@@ -35,13 +35,13 @@ export default function DeliveryButtons() {
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
         >
-          <Button
+          <img
+            src={uberEatsLogo}
+            alt="Uber Eats"
             onClick={openUberEats}
-            className="delivery-btn w-20 h-20 bg-black hover:bg-gray-800 rounded-full flex items-center justify-center shadow-xl p-0"
-            data-testid="button-uber-circle"
-          >
-            <SiUber className="text-white text-lg" />
-          </Button>
+            className="w-20 h-20 cursor-pointer rounded-lg shadow-xl hover:shadow-2xl transition-shadow"
+            data-testid="button-uber-logo"
+          />
         </motion.div>
       </div>
     </div>
