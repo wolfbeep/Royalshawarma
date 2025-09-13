@@ -44,7 +44,7 @@ export default function Order() {
                 <Button 
                   size="lg"
                   className="delivery-btn flex items-center justify-center space-x-4 hover:bg-orange-600 hover:scale-105 text-white px-8 py-4 text-base rounded-full shadow-xl font-semibold bg-[#ff8100] transition-all duration-300 w-full"
-                  onClick={() => window.open('https://www.skipthedishes.com/royal-shawarma-oakville', '_blank')}
+                  onClick={() => window.open('https://www.skipthedishes.com/royal-shawarma-n-service-road-west', '_blank')}
                   data-testid="button-skip-oakville"
                 >
                   <span>Skip The Dishes</span>
