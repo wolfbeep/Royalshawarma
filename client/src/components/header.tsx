@@ -52,13 +52,6 @@ export default function Header() {
           >
             HOME
           </a>
-          <button 
-            onClick={goToOrder}
-            className="nav-item text-white font-medium hover:text-orange-200 transition-colors"
-            data-testid="nav-order-now"
-          >
-            ORDER NOW
-          </button>
           <a 
             href="/locations" 
             className="nav-item text-white font-medium hover:text-orange-200 transition-colors"
@@ -104,13 +97,6 @@ export default function Header() {
             >
               HOME
             </a>
-            <button 
-              onClick={goToOrder}
-              className="block text-white font-medium hover:text-orange-200 transition-colors py-2 w-full text-left"
-              data-testid="mobile-nav-order-now"
-            >
-              ORDER NOW
-            </button>
             <a 
               href="/locations" 
               className="block text-white font-medium hover:text-orange-200 transition-colors py-2"
