@@ -8,7 +8,7 @@ export default function DeliveryButtons() {
   };
 
   const openUberEats = () => {
-    window.open('https://www.ubereats.com/ca/store/royal-shawarma/Ce4mOG06SuWs8qVPXa2v7w?srsltid=AfmBOooi3-7E31UWAzzKk5t2ge13aoRu6LvrEvEkmzsgOPq00vIOZQyC', '_blank');
+    window.open('https://www.ubereats.com/ca/store/royal-shawarma-3615-dixie-rd/yqiKhlh7XP-uP7qBoXHLHw?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjMxNjklMjBTYWRkbGV3b3J0aCUyMENyZXMlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjI0ZWM3Y2IxNC1jZmQwLWI0NzUtZjZlZS02ODAzZjIwN2ZjYjklMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQzLjQyMTcwNCUyQyUyMmxvbmdpdHVkZSUyMiUzQS03OS43NzAxMTUlN0Q%3D&sc=SEARCH_SUGGESTION', '_blank');
   };
 
   return (
