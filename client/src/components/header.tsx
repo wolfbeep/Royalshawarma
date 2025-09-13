@@ -67,13 +67,6 @@ export default function Header() {
           >
             ORDER NOW
           </button>
-          <button 
-            onClick={goToMenu}
-            className="nav-item text-white font-medium hover:text-orange-200 transition-colors"
-            data-testid="nav-menu"
-          >
-            OUR MENU
-          </button>
           <a 
             href="/locations" 
             className="nav-item text-white font-medium hover:text-orange-200 transition-colors"
@@ -125,13 +118,6 @@ export default function Header() {
               data-testid="mobile-nav-order-now"
             >
               ORDER NOW
-            </button>
-            <button 
-              onClick={goToMenu}
-              className="block text-white font-medium hover:text-orange-200 transition-colors py-2 w-full text-left"
-              data-testid="mobile-nav-menu"
-            >
-              OUR MENU
             </button>
             <a 
               href="/locations" 
