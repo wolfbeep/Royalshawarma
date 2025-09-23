@@ -193,7 +193,7 @@ export default function Home() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={`name-${currentImageIndex}`}
-                className="absolute -bottom-8 left-0 right-0 flex justify-center mobile-menu-overlay"
+                className="absolute -bottom-6 left-0 right-0 flex justify-center mobile-menu-overlay"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.0, delay: 0.5 }}
