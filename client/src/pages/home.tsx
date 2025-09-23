@@ -203,7 +203,7 @@ export default function Home() {
                   transition: { duration: 1.0, ease: "easeInOut" }
                 }}
               >
-                <span className="bg-white/90 text-red-600 px-3 sm:px-4 py-2 rounded-full text-sm font-semibold shadow-lg mobile-text-wrap">
+                <span className="bg-white/90 text-red-600 px-3 sm:px-4 py-2 rounded-full text-sm font-semibold shadow-lg mobile-text-wrap text-center">
                   {menuItems[safeImageIndex].name}
                 </span>
               </motion.div>
