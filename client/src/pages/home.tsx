@@ -193,7 +193,7 @@ export default function Home() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={`name-${currentImageIndex}`}
-                className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 sm:mobile-menu-overlay"
+                className="absolute -bottom-8 left-0 right-0 flex justify-center mobile-menu-overlay"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.0, delay: 0.5 }}
@@ -203,7 +203,7 @@ export default function Home() {
                   transition: { duration: 1.0, ease: "easeInOut" }
                 }}
               >
-                <span className="bg-white/90 text-red-600 px-3 sm:px-4 py-2 rounded-full text-sm font-semibold shadow-lg mobile-text-wrap text-center">
+                <span className="inline-block bg-white/90 text-red-600 px-3 sm:px-4 py-2 rounded-full text-sm font-semibold shadow-lg mobile-text-wrap text-center max-w-[18rem]">
                   {menuItems[safeImageIndex].name}
                 </span>
               </motion.div>
