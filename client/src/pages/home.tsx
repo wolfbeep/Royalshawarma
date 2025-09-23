@@ -111,10 +111,10 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative px-4 py-12 lg:px-8">
+      <section className="relative px-4 py-8 sm:py-12 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <motion.h1 
-            className="text-4xl lg:text-6xl font-bold text-white mb-6"
+            className="text-4xl sm:mobile-hero-title lg:text-6xl font-bold text-white mb-4 sm:mb-6 mobile-safe-spacing mobile-text-wrap mobile-readable-text"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -124,7 +124,7 @@ export default function Home() {
           </motion.h1>
           
           <motion.p 
-            className="text-xl text-white/90 mb-8 max-w-2xl mx-auto"
+            className="text-xl sm:mobile-hero-subtitle text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto mobile-safe-spacing mobile-text-wrap mobile-readable-text"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
@@ -134,7 +134,7 @@ export default function Home() {
           
           {/* Delivery Platform Buttons */}
           <motion.div 
-            className="flex justify-center items-center space-x-8 mb-12"
+            className="flex justify-center items-center space-x-8 sm:mobile-delivery-section mb-8 sm:mb-12"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -154,7 +154,7 @@ export default function Home() {
                 key={currentImageIndex}
                 src={menuItems[safeImageIndex].image} 
                 alt={menuItems[safeImageIndex].name}
-                className="rounded-full w-72 h-72 lg:w-96 lg:h-96 mx-auto object-cover shadow-2xl border-8 border-white/20"
+                className="rounded-full w-72 h-72 sm:mobile-featured-image lg:w-96 lg:h-96 mx-auto object-cover shadow-2xl border-8 border-white/20"
                 initial={{ opacity: 0, y: 20, scale: 0.9 }}
                 animate={{ 
                   opacity: 1, 
@@ -193,7 +193,7 @@ export default function Home() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={`name-${currentImageIndex}`}
-                className="absolute -bottom-8 left-1/2 transform -translate-x-1/2"
+                className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 sm:mobile-menu-overlay"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.0, delay: 0.5 }}
@@ -203,7 +203,7 @@ export default function Home() {
                   transition: { duration: 1.0, ease: "easeInOut" }
                 }}
               >
-                <span className="bg-white/90 text-red-600 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                <span className="bg-white/90 text-red-600 px-3 sm:px-4 py-2 rounded-full text-sm font-semibold shadow-lg mobile-text-wrap">
                   {menuItems[safeImageIndex].name}
                 </span>
               </motion.div>
@@ -213,17 +213,17 @@ export default function Home() {
       </section>
 
       {/* Menu Section */}
-      <section id="menu" className="px-4 py-16 lg:px-8">
+      <section id="menu" className="px-4 py-12 sm:py-16 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16 mobile-safe-spacing"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">Our Signature Menu</h2>
-            <p className="text-xl text-white/90">Handcrafted with passion, served with pride</p>
+            <h2 className="text-4xl sm:mobile-menu-title lg:text-5xl font-bold text-white mb-4 mobile-text-wrap mobile-readable-text">Our Signature Menu</h2>
+            <p className="text-xl sm:mobile-menu-subtitle text-white/90 mobile-text-wrap mobile-readable-text">Handcrafted with passion, served with pride</p>
           </motion.div>
 
           <motion.div 
@@ -248,15 +248,15 @@ export default function Home() {
 
 
       {/* Footer */}
-      <footer className="px-4 py-12 lg:px-8 border-t border-white/20">
-        <div className="max-w-7xl mx-auto text-center">
+      <footer className="px-4 py-8 sm:mobile-footer lg:px-8 border-t border-white/20">
+        <div className="max-w-7xl mx-auto text-center mobile-safe-spacing">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <span className="logo-text text-white text-xl">ROYAL SHAWARMA</span>
           </div>
           
           <p className="text-white/80 mb-6">Authentic Middle Eastern cuisine crafted with love and tradition</p>
           
-          <div className="flex justify-center space-x-6 mb-6">
+          <div className="flex justify-center space-x-6 sm:mobile-social-icons mb-6">
             <a 
               href="#" 
               className="text-white hover:text-yellow-300 transition-colors"
