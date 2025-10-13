@@ -32,6 +32,22 @@
         return false;
       }
     </script>
+
+    <!-- Event snippet for Skip The Dishes conversion page -->
+    <script>
+      function gtag_report_conversion_skip(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17336733218/545ECKy1kJobEKKc5spA',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

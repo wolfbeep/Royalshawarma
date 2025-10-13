@@ -7,22 +7,11 @@ declare global {
   interface Window {
     gtag: (...args: any[]) => void;
     gtag_report_conversion: (url: string) => boolean;
+    gtag_report_conversion_skip: (url: string) => boolean;
   }
 }
 
 export default function DeliveryButtons() {
-  function gtag_report_conversion_skip(url: string) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location.href = url;
-      }
-    };
-    window.gtag('event', 'conversion', {
-        'send_to': 'AW-17336733218/545ECKy1kJobEKKc5spA',
-        'event_callback': callback
-    });
-    return false;
-  }
 
   return (
     <div className="flex flex-col items-center space-y-4">
@@ -37,7 +26,7 @@ export default function DeliveryButtons() {
           <img
             src={skipLogo}
             alt="Skip The Dishes"
-            onClick={() => gtag_report_conversion_skip("https://www.skipthedishes.com/royal-shawarma-dixie-road?utm_source=google&utm_medium=cpc&utm_campaign=CM_S_G_CAN_EN_[RES]_[ENGM]_SC_Mississauga_1002350&utm_campaignid=15365077874&adj_tracker=o6dvmeq&adj_campaign=15365077874&gad_source=1&gad_campaignid=15365077874&gbraid=0AAAAAD3ULIVD6iLxgtaQGv2pqfa_mlSFa&gclid=CjwKCAjw_fnFBhB0EiwAH_MfZk6EGLp4QdJrfzHd1EIWVoFsVsXMuKqSNbJnVNa2RSqo5Rma3ISfIRoCl0MQAvD_BwE")}
+            onClick={() => window.gtag_report_conversion_skip("https://www.skipthedishes.com/royal-shawarma-dixie-road?utm_source=google&utm_medium=cpc&utm_campaign=CM_S_G_CAN_EN_[RES]_[ENGM]_SC_Mississauga_1002350&utm_campaignid=15365077874&adj_tracker=o6dvmeq&adj_campaign=15365077874&gad_source=1&gad_campaignid=15365077874&gbraid=0AAAAAD3ULIVD6iLxgtaQGv2pqfa_mlSFa&gclid=CjwKCAjw_fnFBhB0EiwAH_MfZk6EGLp4QdJrfzHd1EIWVoFsVsXMuKqSNbJnVNa2RSqo5Rma3ISfIRoCl0MQAvD_BwE")}
             className="w-20 h-20 cursor-pointer rounded-lg shadow-xl hover:shadow-2xl transition-shadow sm:w-16 sm:h-16"
             data-testid="button-skip-logo"
           />
