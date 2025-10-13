@@ -2,27 +2,15 @@ import { motion } from "framer-motion";
 import skipLogo from "@assets/skip_1757787826712.png";
 import uberEatsLogo from "@assets/uber_eats_green_1757787827950.png";
 
-// Declare gtag function for TypeScript
+// Declare global functions for TypeScript
 declare global {
   interface Window {
     gtag: (...args: any[]) => void;
+    gtag_report_conversion: (url: string) => boolean;
   }
 }
 
 export default function DeliveryButtons() {
-  function gtag_report_conversion_uber(url: string) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location.href = url;
-      }
-    };
-    window.gtag('event', 'conversion', {
-        'send_to': 'AW-17336733218/U2AbCOj2i5obEKKc5spA',
-        'event_callback': callback
-    });
-    return false;
-  }
-
   function gtag_report_conversion_skip(url: string) {
     var callback = function () {
       if (typeof(url) != 'undefined') {
@@ -63,7 +51,7 @@ export default function DeliveryButtons() {
           <img
             src={uberEatsLogo}
             alt="Uber Eats"
-            onClick={() => gtag_report_conversion_uber("https://www.ubereats.com/ca/store/royal-shawarma-3615-dixie-rd/yqiKhlh7XP-uP7qBoXHLHw?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjMxNjklMjBTYWRkbGV3b3J0aCUyMENyZXMlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjI0ZWM3Y2IxNC1jZmQwLWI0NzUtZjZlZS02ODAzZjIwN2ZjYjklMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQzLjQyMTcwNCUyQyUyMmxvbmdpdHVkZSUyMiUzQS03OS43NzAxMTUlN0Q%3D&sc=SEARCH_SUGGESTION")}
+            onClick={() => window.gtag_report_conversion("https://www.ubereats.com/ca/store/royal-shawarma-3615-dixie-rd/yqiKhlh7XP-uP7qBoXHLHw?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjMxNjklMjBTYWRkbGV3b3J0aCUyMENyZXMlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjI0ZWM3Y2IxNC1jZmQwLWI0NzUtZjZlZS02ODAzZjIwN2ZjYjklMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQzLjQyMTcwNCUyQyUyMmxvbmdpdHVkZSUyMiUzQS03OS43NzAxMTUlN0Q%3D&sc=SEARCH_SUGGESTION")}
             className="w-20 h-20 cursor-pointer rounded-lg shadow-xl hover:shadow-2xl transition-shadow sm:w-16 sm:h-16"
             data-testid="button-uber-logo"
           />
