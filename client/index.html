@@ -17,37 +17,19 @@
       gtag('config', 'AW-17336733218');
     </script>
 
-    <!-- Event snippet for Uber Eats Click conversion page with Enhanced Conversions -->
+    <!-- Event snippet for Uber Eats Click conversion page -->
     <script>
-      function gtag_report_conversion(url) {
-        // Enhanced conversion user data
-        // Replace these placeholder values with actual customer data from your form/login system
-        gtag('set', 'user_data', {
-          "email": "customer@example.com",
-          "phone_number": "1234567890",
-          "address": {
-            "first_name": "John",
-            "last_name": "Doe",
-            "street": "123 Main St",
-            "city": "Toronto",
-            "region": "ON",
-            "postal_code": "M5H2N2",
-            "country": "CA"
-          }
-        });
-
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        
+      function gtag_report_conversion_uber(url) {
         gtag('event', 'conversion', {
-            'send_to': 'AW-17336733218/U2AbCOj2i5obEKKc5spA',
-            'value': 0.00,
-            'currency': 'CAD',
-            'event_callback': callback
+          'send_to': 'AW-17336733218/U2AbCOj2i5obEKKc5spA',
+          'value': 0.00,
+          'currency': 'CAD'
         });
+        
+        // Redirect after tracking
+        if (typeof(url) !== 'undefined') {
+          window.location.href = url;
+        }
         return false;
       }
     </script>

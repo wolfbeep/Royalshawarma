@@ -6,7 +6,7 @@ import uberEatsLogo from "@assets/uber_eats_green_1757787827950.png";
 declare global {
   interface Window {
     gtag: (...args: any[]) => void;
-    gtag_report_conversion: (url: string) => boolean;
+    gtag_report_conversion_uber: (url: string) => boolean;
     gtag_report_conversion_skip: (url: string) => boolean;
   }
 }
