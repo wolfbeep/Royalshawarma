@@ -40,7 +40,7 @@ export default function DeliveryButtons() {
           <img
             src={uberEatsLogo}
             alt="Uber Eats"
-            onClick={() => window.gtag_report_conversion("https://www.ubereats.com/ca/store/royal-shawarma-3615-dixie-rd/yqiKhlh7XP-uP7qBoXHLHw?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjMxNjklMjBTYWRkbGV3b3J0aCUyMENyZXMlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjI0ZWM3Y2IxNC1jZmQwLWI0NzUtZjZlZS02ODAzZjIwN2ZjYjklMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQzLjQyMTcwNCUyQyUyMmxvbmdpdHVkZSUyMiUzQS03OS43NzAxMTUlN0Q%3D&sc=SEARCH_SUGGESTION")}
+            onClick={() => window.gtag_report_conversion_uber("https://www.ubereats.com/ca/store/royal-shawarma-3615-dixie-rd/yqiKhlh7XP-uP7qBoXHLHw?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjMxNjklMjBTYWRkbGV3b3J0aCUyMENyZXMlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjI0ZWM3Y2IxNC1jZmQwLWI0NzUtZjZlZS02ODAzZjIwN2ZjYjklMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQzLjQyMTcwNCUyQyUyMmxvbmdpdHVkZSUyMiUzQS03OS43NzAxMTUlN0Q%3D&sc=SEARCH_SUGGESTION")}
             className="w-20 h-20 cursor-pointer rounded-lg shadow-xl hover:shadow-2xl transition-shadow sm:w-16 sm:h-16"
             data-testid="button-uber-logo"
           />

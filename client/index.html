@@ -38,8 +38,8 @@
     <script>
       function gtag_report_conversion_skip(url) {
         var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
+          if (typeof(url) !== 'undefined') {
+            window.location = url; // Redirect after tracking
           }
         };
         gtag('event', 'conversion', {
