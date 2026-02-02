@@ -99,14 +99,33 @@ function generateMenuItems() {
         menuItems.forEach(item => {
             const menuCard = document.createElement('div');
             menuCard.className = 'menu-card';
-            menuCard.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" class="menu-card-image" onerror="this.src='images/placeholder-food.jpg'">
-                <div class="menu-card-content">
-                    <h3 class="menu-card-title">${item.name}</h3>
-                    <p class="menu-card-description">${item.description}</p>
-                    <div class="menu-card-price">${item.price}</div>
-                </div>
-            `;
+
+            const img = document.createElement('img');
+            img.src = item.image;
+            img.alt = item.name;
+            img.className = 'menu-card-image';
+            img.onerror = function() { this.src = 'images/placeholder-food.jpg'; };
+
+            const content = document.createElement('div');
+            content.className = 'menu-card-content';
+
+            const title = document.createElement('h3');
+            title.className = 'menu-card-title';
+            title.textContent = item.name;
+
+            const description = document.createElement('p');
+            description.className = 'menu-card-description';
+            description.textContent = item.description;
+
+            const price = document.createElement('div');
+            price.className = 'menu-card-price';
+            price.textContent = item.price;
+
+            content.appendChild(title);
+            content.appendChild(description);
+            content.appendChild(price);
+            menuCard.appendChild(img);
+            menuCard.appendChild(content);
             
             // Add hover animation
             menuCard.addEventListener('mouseenter', function() {
