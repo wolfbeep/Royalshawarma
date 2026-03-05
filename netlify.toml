@@ -1,8 +1,14 @@
 [build]
-  publish = "."
+  command = "npm run build:client"
+  publish = "dist/public"
 
 [build.environment]
   NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/*"
